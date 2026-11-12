@@ -90,36 +90,37 @@
     </style>
 </head>
 <body class="min-h-screen flex flex-col">
-
-    <header class="header-glass sticky top-0 z-50 py-3 px-4 md:px-16 flex items-center justify-between flex-wrap gap-4">
-        <!-- Logo -->
-        <div class="logo flex items-center gap-2">
-            <img src="chathuralogo.png" alt="Chathura Logo" class="w-10 h-10 object-contain rounded-full border border-[#ff7200]">
-            <h2 class="text-[#ff7200] text-xl md:text-3xl font-black font-sans tracking-wide">Chathura</h2>
+    <header class="header-glass sticky top-0 z-50 py-3 px-4 md:px-16 flex flex-col gap-3">
+    
+    <div class="flex items-center justify-between w-full">
+        <div class="logo flex items-center gap-2.5">
+            <img src="chathuralogo.png" alt="Chathura Logo" class="w-10 h-10 md:w-12 md:h-12 object-contain rounded-full border border-[#ff7200]">
+            <h2 class="text-[#ff7200] text-2xl md:text-3xl font-black font-sans tracking-wide">Chathura</h2>
         </div>
-        
-      
-        <nav class="hidden md:flex items-center gap-8">
-            <a onclick="switchTab('home')" class="nav-link active" data-tab="home">HOME</a>
-            <a onclick="switchTab('batting')" class="nav-link" data-tab="batting">BATTING</a>
-            <a onclick="switchTab('bowling')" class="nav-link" data-tab="bowling">BOWLING</a>
-            <a onclick="switchTab('fielding')" class="nav-link" data-tab="fielding">FIELDING</a>
-        </nav>
 
-       
-        <div class="flex items-center gap-2 md:gap-4 flex-wrap">
-            <div class="flex items-center bg-transparent border border-[#ff7200] rounded-lg overflow-hidden">
-                <input type="search" id="searchInput" placeholder="Search shot..." class="bg-transparent px-2 py-1 text-xs md:text-sm text-white outline-none w-32 md:w-56">
-                <button onclick="performSearch()" class="bg-[#ff7200] px-3 py-1 text-white font-bold text-xs md:text-sm hover:bg-[#e06400] transition">Search</button>
-            </div>
-
-            <div class="text-[11px] md:text-xs bg-slate-800 border border-slate-700 px-2.5 py-1 rounded-lg text-amber-400 font-semibold flex items-center gap-1">
+        <div class="flex items-center gap-2">
+            <div class="text-xs bg-slate-800 border border-slate-700 px-2.5 py-1.5 rounded-lg text-amber-400 font-semibold flex items-center gap-1.5">
                 <i class="fas fa-eye"></i> Views: <span id="globalViewCount" class="text-white font-bold"></span>
             </div>
-
             <div id="google_translate_element"></div>
         </div>
-    </header>
+    </div>
+   
+    <div class="flex flex-col md:flex-row items-center justify-between w-full gap-3 border-t border-slate-800 pt-2.5">
+        <nav class="flex items-center justify-center md:justify-start gap-4 sm:gap-8 w-full md:w-auto flex-wrap">
+            <a onclick="switchTab('home')" class="nav-link active text-xs sm:text-sm" data-tab="home">HOME</a>
+            <a onclick="switchTab('batting')" class="nav-link text-xs sm:text-sm" data-tab="batting">BATTING</a>
+            <a onclick="switchTab('bowling')" class="nav-link text-xs sm:text-sm" data-tab="bowling">BOWLING</a>
+            <a onclick="switchTab('fielding')" class="nav-link text-xs sm:text-sm" data-tab="fielding">FIELDING</a>
+        </nav>
+
+        <div class="flex items-center bg-transparent border border-[#ff7200] rounded-lg overflow-hidden w-full md:w-auto">
+            <input type="search" id="searchInput" placeholder="Search shot, e.g. Cover Drive..." class="bg-transparent px-3 py-1.5 text-xs sm:text-sm text-white outline-none w-full md:w-56">
+            <button onclick="performSearch()" class="bg-[#ff7200] px-4 py-1.5 text-white font-bold text-xs sm:text-sm hover:bg-[#e06400] transition">Search</button>
+        </div>
+    </div>
+
+</header>
 
 
         
