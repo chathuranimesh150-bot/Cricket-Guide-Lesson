@@ -80,10 +80,12 @@
             background-color: #1f2937;
             color: #fff;
             border: 1px solid #ff7200;
-            padding: 3px 7px;
+            padding: 2px 5px;
             border-radius: 5px;
             font-size: 12px;
             outline: none;
+            width:90px;
+            
         }
         .goog-te-banner-frame, .goog-te-balloon-frame { display: none !important; }
         body { top: 0px !important; }
@@ -173,7 +175,7 @@
         පිතිකරුවෙකුගේ සාර්ථකත්වයේ මූලිකම පදනම වන්නේ නිවැරදි Stance එකයි. පන්දු යවන්නා පන්දුව නිකුත් කරන මොහොතේ (Delivery Stride) පිතිකරුවාට ඕනෑම පහරකට (Off-side හෝ Leg-side) ක්ෂණිකව සහ සමබරව ගමන් කිරීමට මෙම මූලික ඉරියව්ව අත්‍යවශ්‍ය වේ.
     </p>
 
-    <!-- Technical Guide Box -->
+   
     <div class="bg-slate-900 border-l-4 border-[#ff7200] p-6 rounded-r-xl space-y-4">
         <h4 class="text-lg font-bold text-[#ff7200] flex items-center gap-2">
             <i class="fas fa-microscope text-sm"></i> ජාත්‍යන්තර තාක්ෂණික පියවර (Technical Execution)
@@ -3206,7 +3208,7 @@
             const query = document.getElementById('searchInput').value.toLowerCase().trim();
             if (!query) return;
 
-            // 1. මුලින්ම වඩාත්ම නිශ්චිත සහ සංකීර්ණ නම් ටික චෙක් කරන්න
+           
             if (query.includes('lofted') && query.includes('drive')) {
                 switchTab('batting');
                 setTimeout(() => document.getElementById('shot-20').scrollIntoView({ behavior: 'smooth' }), 200);
@@ -3263,7 +3265,7 @@
                 switchTab('batting');
                 setTimeout(() => document.getElementById('shot-16').scrollIntoView({ behavior: 'smooth' }), 200);
 
-            // 2. ඊටපස්සේ තනි වචන හෝ වෙනත් ෂොට්ස් චෙක් කරන්න
+            
             } else if (query.includes('stance')) {
                 switchTab('batting');
                 setTimeout(() => document.getElementById('shot-1').scrollIntoView({ behavior: 'smooth' }), 200);
@@ -3316,7 +3318,7 @@
                 switchTab('batting');
                 setTimeout(() => document.getElementById('shot-27').scrollIntoView({ behavior: 'smooth' }), 200);
 
-            // 3. Bowling කොටස
+           
             } else if (query.includes('off break')) {
                 switchTab('bowling');
                 setTimeout(() => document.getElementById('spin-01').scrollIntoView({ behavior: 'smooth' }), 200);
@@ -3405,7 +3407,7 @@
                 switchTab('bowling');
                 setTimeout(() => document.getElementById('fast-12').scrollIntoView({ behavior: 'smooth' }), 200);
 
-            // 4. Fielding කොටස
+           
             } else if (query.includes('deep field')) {
                 switchTab('fielding');
                 setTimeout(() => document.getElementById('catch-01').scrollIntoView({ behavior: 'smooth' }), 200);
@@ -3440,5 +3442,22 @@
             }
         }
     </script>
+
+  
+
+    <script type="text/javascript">
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                var selectBox = document.querySelector('.goog-te-combo');
+                if (selectBox) {
+                    if (selectBox.options[0]) {
+                        selectBox.options[0].text = 'Select Your Language';
+                    }
+                }
+               }, 1000);
+        });
+    </script>
+
+
 </body>
 </html>
