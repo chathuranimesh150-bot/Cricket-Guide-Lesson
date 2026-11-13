@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Cricket Pro Guide Coaching</title>
+    <title> Cricket Pro Guide Lesson</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?        family=Inter:wght@300;400;600;700;800&display=swap');
         
         body { 
             font-family: 'Inter', sans-serif;
@@ -76,7 +76,15 @@
         }
 
         
-    
+        #google_translate_element select {
+            background-color: #1f2937;
+            color: #fff;
+            border: 1px solid #ff7200;
+            padding: 3px 7px;
+            border-radius: 5px;
+            font-size: 12px;
+            outline: none;
+        }
         .goog-te-banner-frame, .goog-te-balloon-frame { display: none !important; }
         body { top: 0px !important; }
     </style>
@@ -87,14 +95,14 @@
     <div class="flex items-center justify-between w-full">
         <div class="logo flex items-center gap-2.5">
             <img src="homelogo.jpeg" alt="Chathura Logo" class="w-10 h-10 md:w-12 md:h-12 object-contain rounded-full border border-[#ff7200]">
-            
+            <h2 class="text-[#ff7200] text-2xl md:text-3xl font-black font-sans tracking-wide">Chathura</h2>
         </div>
 
         <div class="flex items-center gap-2">
             <div class="text-xs bg-slate-800 border border-slate-700 px-2.5 py-1.5 rounded-lg text-amber-400 font-semibold flex items-center gap-1.5">
                 <i class="fas fa-eye"></i> Views: <span id="globalViewCount" class="text-white font-bold"></span>
             </div>
-            
+            <div id="google_translate_element"></div>
         </div>
     </div>
    
@@ -126,10 +134,10 @@
             <div class="py-16 md:py-24 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-10">
                 <div class="max-w-xl">
                     <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
-                        Cricket Coaching & <br><span class="text-[#ff7200]">Masterclass</span> <br>Portal
+                        Cricket Lesson & <br><span class="text-[#ff7200]">Masterclass</span> <br>Portal
                     </h1>
                     <p class="text-slate-400 text-base md:text-lg leading-relaxed mb-8">
-                        ලංකා ක්‍රිකට් ප්‍රමිතීන්ට අනුව සකස් කරන ලද වෘත්තීය මට්ටමේ පිතිකරණ (Batting), පන්දු යැවීම (Bowling) සහ පන්දු රැකීමේ (Fielding) තාක්ෂණික මාර්ගෝපදේශ එකම තැනකින් ඉගෙන ගන්න.
+                       ක්‍රිකට් ප්‍රමිතීන්ට අනුව සකස් කරන ලද වෘත්තීය මට්ටමේ පිතිකරණ (Batting), පන්දු යැවීම (Bowling) සහ පන්දු රැකීමේ (Fielding) තාක්ෂණික මාර්ගෝපදේශ එකම තැනකින් ඉගෙන ගන්න.
                     </p>
                     <button onclick="switchTab('batting')" class="bg-[#ff7200] hover:bg-white hover:text-[#ff7200] text-white font-bold text-lg px-8 py-3 rounded-xl transition duration-300 shadow-lg">
                         EXPLORE LESSONS
@@ -205,7 +213,7 @@
             </div>
         </div>
 
-        <!-- Pro Tip Section -->
+        
         <div class="mt-4 pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
             <div>
                 <strong class="text-amber-400">Pro Tip:</strong> 
@@ -2495,7 +2503,7 @@
                     <div class="badge-number">08</div>
                     <h3 class="text-2xl font-bold text-[#ff7200]">Reverse Swing</h3>
                 </div>
-                     <img src="reverseswing.jpeg" alt="reverseswing" class="w-full max-h-[450px] object-cover rounded-xl mb-6">
+                     <img src="reverseswing.jpeg" loading="lazy" alt="reverseswing" class="w-full max-h-[450px] object-cover rounded-xl mb-6">
                         <p class="text-slate-300 text-base leading-relaxed mb-6">
         ක්‍රිකට් ක්‍රීඩාවේ වේගපන්දු කලාවේ ඇති අතිශය විද්‍යාත්මක සහ මාරාන්තිකම ප්‍රහාරක ක්‍රමවේදයකි. සාමාන්‍යයෙන් පන්දුවක් අලුත් අවධියේදී ඔප දැමූ පැත්තට (Shiny side) විරුද්ධ දිශාවට ස්විං වුවද, පන්දුව ඕවර 30-40කට වඩා වැඩි කාලයක් පාවිච්චි කර එක් පැත්තක් හොඳින් ඔප දමා අනෙක් පැත්ත රළු කරගත් පසු, පන්දුව සාමාන්‍ය ස්විං වන දිශාවට **සම්පූර්ණයෙන්ම ප්‍රතිවිරුද්ධ දිශාවට** (Unexpected late swing into or away from the batsman) වේගයෙන් හැරී යාම සිදුවේ.
     </p>
@@ -3128,11 +3136,23 @@
 
     
     <footer class="bg-slate-950 text-white py-8 px-6 text-center border-t border-slate-800">
-        <span class="text-2xl font-black italic text-[#ff7200]">Chathura Nimesh</span>
-        <p class="text-slate-500 text-xs mt-2 uppercase tracking-[0.2em]">&copy; 2026 Cricket Digital Guide Design & Development By Chathura Nimesh</p>
+        <span class="text-2xl font-black italic text-[#ff7200]">Chathura Kodithuwakku</span>
+        <p class="text-slate-500 text-xs mt-2 uppercase tracking-[0.2em]">&copy; 2026 Cricket Digital Guide Design & Developer</p>
     </footer>
 
-   
+    
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,si,ta,hi,ar,fr,de,zh-CN',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
    
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
@@ -3186,294 +3206,236 @@
             const query = document.getElementById('searchInput').value.toLowerCase().trim();
             if (!query) return;
 
-            if (query.includes('stance')) {
-                switchTab('batting');
-                setTimeout(() => document.getElementById('shot-1').scrollIntoView({ behavior: 'smooth' }), 200);
-
-                 } else if (query.includes('forward')  {
-                switchTab('batting');
-                setTimeout(() => document.getElementById('shot-2').scrollIntoView({ behavior: 'smooth' }), 200);
-
-                } else if (query.includes('cover')  {
-                switchTab('batting');
-                setTimeout(() => document.getElementById('shot-3').scrollIntoView({ behavior: 'smooth' }), 200);
-
-                 } else if (query.includes('backfoot') || query.includes('drive')) {
-                switchTab('batting');
-                setTimeout(() => document.getElementById('shot-4').scrollIntoView({ behavior: 'smooth' }), 200);
-
-
-                 } else if (query.includes('pull')  {
-                switchTab('batting');
-                setTimeout(() => document.getElementById('shot-5').scrollIntoView({ behavior: 'smooth' }), 200);
-
-                } else if (query.includes('square')  {
-                switchTab('batting');
-                setTimeout(() => document.getElementById('shot-6').scrollIntoView({ behavior: 'smooth' }), 200);
-
-
-                 } else if (query.includes('leg')  {
-                switchTab('batting');
-                setTimeout(() => document.getElementById('shot-7').scrollIntoView({ behavior: 'smooth' }), 200);
-
-                 } else if (query.includes('sweep')  {
-                switchTab('batting');
-                setTimeout(() => document.getElementById('shot-8').scrollIntoView({ behavior: 'smooth' }), 200);
-
-                 } else if (query.includes('horizontal')  {
-                switchTab('batting');
-                setTimeout(() => document.getElementById('shot-9').scrollIntoView({ behavior: 'smooth' }), 200);
-
-
-                 } else if (query.includes('hook')  {
-                switchTab('batting');
-                setTimeout(() => document.getElementById('shot-10').scrollIntoView({ behavior: 'smooth' }), 200);
-
-                 } else if (query.includes('reverse')  {
-                switchTab('batting');
-                setTimeout(() => document.getElementById('shot-11').scrollIntoView({ behavior: 'smooth' }), 200);
-
-                 } else if (query.includes('paddle')  {
-                switchTab('batting');
-                setTimeout(() => document.getElementById('shot-12').scrollIntoView({ behavior: 'smooth' }), 200);
-
-                 } else if (query.includes('helicopter')  {
-                switchTab('batting');
-                setTimeout(() => document.getElementById('shot-13').scrollIntoView({ behavior: 'smooth' }), 200);
-
-                 } else if (query.includes('upper')  {
-                switchTab('batting');
-                setTimeout(() => document.getElementById('shot-14').scrollIntoView({ behavior: 'smooth' }), 200);
-
-                 } else if (query.includes('on')  {
-                switchTab('batting');
-                setTimeout(() => document.getElementById('shot-15').scrollIntoView({ behavior: 'smooth' }), 200);
-
-                } else if (query.includes('switch')  {
-                switchTab('batting');
-                setTimeout(() => document.getElementById('shot-16').scrollIntoView({ behavior: 'smooth' }), 200);
-
-                 } else if (query.includes('late')  {
-                switchTab('batting');
-                setTimeout(() => document.getElementById('shot-17').scrollIntoView({ behavior: 'smooth' }), 200);
-
-                 } else if (query.includes('slog')  {
-                switchTab('batting');
-                setTimeout(() => document.getElementById('shot-18').scrollIntoView({ behavior: 'smooth' }), 200);
-
-                 } else if (query.includes('straight')  {
-                switchTab('batting');
-                setTimeout(() => document.getElementById('shot-19').scrollIntoView({ behavior: 'smooth' }), 200);
-
-                  } else if (query.includes('lofted')  {
+            // 1. මුලින්ම වඩාත්ම නිශ්චිත සහ සංකීර්ණ නම් ටික චෙක් කරන්න
+            if (query.includes('lofted') && query.includes('drive')) {
                 switchTab('batting');
                 setTimeout(() => document.getElementById('shot-20').scrollIntoView({ behavior: 'smooth' }), 200);
 
-                  } else if (query.includes('cut')  {
+            } else if (query.includes('cover') && query.includes('drive')) {
                 switchTab('batting');
-                setTimeout(() => document.getElementById('shot-21').scrollIntoView({ behavior: 'smooth' }), 200);
+                setTimeout(() => document.getElementById('shot-3').scrollIntoView({ behavior: 'smooth' }), 200);
 
-                 } else if (query.includes('scoop ')  {
+            } else if (query.includes('backfoot') && query.includes('drive')) {
                 switchTab('batting');
-                setTimeout(() => document.getElementById('shot-22').scrollIntoView({ behavior: 'smooth' }), 200);
+                setTimeout(() => document.getElementById('shot-4').scrollIntoView({ behavior: 'smooth' }), 200);
 
-                  } else if (query.includes('square') || query.includes('cut')) {
+            } else if (query.includes('square') && query.includes('drive')) {
                 switchTab('batting');
-                setTimeout(() => document.getElementById('shot-23').scrollIntoView({ behavior: 'smooth' }), 200);
+                setTimeout(() => document.getElementById('shot-6').scrollIntoView({ behavior: 'smooth' }), 200);
 
-                  } else if (query.includes('inside out')  {
+            } else if (query.includes('on') && query.includes('drive')) {
                 switchTab('batting');
-                setTimeout(() => document.getElementById('shot-24').scrollIntoView({ behavior: 'smooth' }), 200);
+                setTimeout(() => document.getElementById('shot-15').scrollIntoView({ behavior: 'smooth' }), 200);
 
-                  } else if (query.includes('flick')  {
+            } else if (query.includes('straight') && query.includes('drive')) {
                 switchTab('batting');
-                setTimeout(() => document.getElementById('shot-25').scrollIntoView({ behavior: 'smooth' }), 200);
+                setTimeout(() => document.getElementById('shot-19').scrollIntoView({ behavior: 'smooth' }), 200);
 
-                  } else if (query.includes('off') || query.includes('drive')) {
+            } else if (query.includes('off') && query.includes('drive')) {
                 switchTab('batting');
                 setTimeout(() => document.getElementById('shot-26').scrollIntoView({ behavior: 'smooth' }), 200);
 
+            } else if (query.includes('reverse') && query.includes('sweep')) {
+                switchTab('batting');
+                setTimeout(() => document.getElementById('shot-11').scrollIntoView({ behavior: 'smooth' }), 200);
 
-                } else if (query.includes('charge down the') || query.includes('track')) {
+            } else if (query.includes('paddle') && query.includes('sweep')) {
+                switchTab('batting');
+                setTimeout(() => document.getElementById('shot-12').scrollIntoView({ behavior: 'smooth' }), 200);
+
+            } else if (query.includes('slog') && query.includes('sweep')) {
+                switchTab('batting');
+                setTimeout(() => document.getElementById('shot-18').scrollIntoView({ behavior: 'smooth' }), 200);
+
+            } else if (query.includes('upper') && query.includes('cut')) {
+                switchTab('batting');
+                setTimeout(() => document.getElementById('shot-14').scrollIntoView({ behavior: 'smooth' }), 200);
+
+            } else if (query.includes('late') && query.includes('cut')) {
+                switchTab('batting');
+                setTimeout(() => document.getElementById('shot-17').scrollIntoView({ behavior: 'smooth' }), 200);
+
+            } else if (query.includes('square') && query.includes('cut')) {
+                switchTab('batting');
+                setTimeout(() => document.getElementById('shot-23').scrollIntoView({ behavior: 'smooth' }), 200);
+
+            } else if (query.includes('switch') && query.includes('hit')) {
+                switchTab('batting');
+                setTimeout(() => document.getElementById('shot-16').scrollIntoView({ behavior: 'smooth' }), 200);
+
+            // 2. ඊටපස්සේ තනි වචන හෝ වෙනත් ෂොට්ස් චෙක් කරන්න
+            } else if (query.includes('stance')) {
+                switchTab('batting');
+                setTimeout(() => document.getElementById('shot-1').scrollIntoView({ behavior: 'smooth' }), 200);
+
+            } else if (query.includes('forward') || query.includes('defence')) {
+                switchTab('batting');
+                setTimeout(() => document.getElementById('shot-2').scrollIntoView({ behavior: 'smooth' }), 200);
+
+            } else if (query.includes('pull')) {
+                switchTab('batting');
+                setTimeout(() => document.getElementById('shot-5').scrollIntoView({ behavior: 'smooth' }), 200);
+
+            } else if (query.includes('leg') && query.includes('glance')) {
+                switchTab('batting');
+                setTimeout(() => document.getElementById('shot-7').scrollIntoView({ behavior: 'smooth' }), 200);
+
+            } else if (query.includes('sweep')) {
+                switchTab('batting');
+                setTimeout(() => document.getElementById('shot-8').scrollIntoView({ behavior: 'smooth' }), 200);
+
+            } else if (query.includes('horizontal')) {
+                switchTab('batting');
+                setTimeout(() => document.getElementById('shot-9').scrollIntoView({ behavior: 'smooth' }), 200);
+
+            } else if (query.includes('hook')) {
+                switchTab('batting');
+                setTimeout(() => document.getElementById('shot-10').scrollIntoView({ behavior: 'smooth' }), 200);
+
+            } else if (query.includes('helicopter')) {
+                switchTab('batting');
+                setTimeout(() => document.getElementById('shot-13').scrollIntoView({ behavior: 'smooth' }), 200);
+
+            } else if (query.includes('cut')) {
+                switchTab('batting');
+                setTimeout(() => document.getElementById('shot-21').scrollIntoView({ behavior: 'smooth' }), 200);
+
+            } else if (query.includes('scoop')) {
+                switchTab('batting');
+                setTimeout(() => document.getElementById('shot-22').scrollIntoView({ behavior: 'smooth' }), 200);
+
+            } else if (query.includes('inside out')) {
+                switchTab('batting');
+                setTimeout(() => document.getElementById('shot-24').scrollIntoView({ behavior: 'smooth' }), 200);
+
+            } else if (query.includes('flick')) {
+                switchTab('batting');
+                setTimeout(() => document.getElementById('shot-25').scrollIntoView({ behavior: 'smooth' }), 200);
+
+            } else if (query.includes('charge down') || query.includes('track')) {
                 switchTab('batting');
                 setTimeout(() => document.getElementById('shot-27').scrollIntoView({ behavior: 'smooth' }), 200);
 
-                 
-
-
-
-
-
-
-
-
-
-
-
-            } else if (query.includes('spin')) {
-                switchTab('bowling');
-                setTimeout(() => document.getElementById('spin-30').scrollIntoView({ behavior: 'smooth' }), 200);
-
-            
-                  } else if (query.includes('Off') || query.includes('break')) {
+            // 3. Bowling කොටස
+            } else if (query.includes('off break')) {
                 switchTab('bowling');
                 setTimeout(() => document.getElementById('spin-01').scrollIntoView({ behavior: 'smooth' }), 200);
 
-                    
-                  } else if (query.includes('doosra') || query.includes('doosra')) {
+            } else if (query.includes('doosra')) {
                 switchTab('bowling');
                 setTimeout(() => document.getElementById('spin-02').scrollIntoView({ behavior: 'smooth' }), 200);
 
-
-                    
-                  } else if (query.includes('arm') || query.includes('ball')) {
+            } else if (query.includes('arm ball')) {
                 switchTab('bowling');
                 setTimeout(() => document.getElementById('spin-03').scrollIntoView({ behavior: 'smooth' }), 200);
 
-                    
-                  } else if (query.includes('carrom') || query.includes('break')) {
+            } else if (query.includes('carrom')) {
                 switchTab('bowling');
                 setTimeout(() => document.getElementById('spin-04').scrollIntoView({ behavior: 'smooth' }), 200);
 
-
-                
-                  } else if (query.includes('top') || query.includes('spinner')) {
+            } else if (query.includes('top spinner')) {
                 switchTab('bowling');
                 setTimeout(() => document.getElementById('spin-05').scrollIntoView({ behavior: 'smooth' }), 200);
 
-
-                    
-                  } else if (query.includes('leg') || query.includes('break')) {
+            } else if (query.includes('leg break')) {
                 switchTab('bowling');
                 setTimeout(() => document.getElementById('spin-06').scrollIntoView({ behavior: 'smooth' }), 200);
 
-
-                    
-                  } else if (query.includes('googly') || query.includes('googly')) {
+            } else if (query.includes('googly')) {
                 switchTab('bowling');
                 setTimeout(() => document.getElementById('spin-07').scrollIntoView({ behavior: 'smooth' }), 200);
 
-
-                    
-                  } else if (query.includes('flipper') || query.includes('flipper')) {
+            } else if (query.includes('flipper')) {
                 switchTab('bowling');
                 setTimeout(() => document.getElementById('spin-08').scrollIntoView({ behavior: 'smooth' }), 200);
 
-                
-                  } else if (query.includes('slider') || query.includes('slider')) {
+            } else if (query.includes('slider')) {
                 switchTab('bowling');
                 setTimeout(() => document.getElementById('spin-09').scrollIntoView({ behavior: 'smooth' }), 200);
 
-                     } else if (query.includes('chinaman') || query.includes('chinaman')) {
+            } else if (query.includes('chinaman')) {
                 switchTab('bowling');
                 setTimeout(() => document.getElementById('spin-10').scrollIntoView({ behavior: 'smooth' }), 200);
 
-
-
-
-
-
-
-
-
-
-
-
-           
-
-                 } else if (query.includes('outswing') || query.includes('outswing')) {
+            } else if (query.includes('outswing')) {
                 switchTab('bowling');
                 setTimeout(() => document.getElementById('fast-01').scrollIntoView({ behavior: 'smooth' }), 200);
 
-
-                 } else if (query.includes('inswing') || query.includes('inswing')) {
+            } else if (query.includes('inswing')) {
                 switchTab('bowling');
                 setTimeout(() => document.getElementById('fast-02').scrollIntoView({ behavior: 'smooth' }), 200);
 
-
-                 } else if (query.includes('bouncer') || query.includes('bouncer')) {
+            } else if (query.includes('bouncer')) {
                 switchTab('bowling');
                 setTimeout(() => document.getElementById('fast-03').scrollIntoView({ behavior: 'smooth' }), 200);
 
-
-                 } else if (query.includes('yoker') || query.includes('yoker')) {
+            } else if (query.includes('yoker') || query.includes('yorker')) {
                 switchTab('bowling');
                 setTimeout(() => document.getElementById('fast-04').scrollIntoView({ behavior: 'smooth' }), 200);
 
-                 } else if (query.includes('full') || query.includes('toss')) {
+            } else if (query.includes('full toss')) {
                 switchTab('bowling');
                 setTimeout(() => document.getElementById('fast-05').scrollIntoView({ behavior: 'smooth' }), 200);
 
-
-                 } else if (query.includes('length') || query.includes('ball')) {
+            } else if (query.includes('length ball')) {
                 switchTab('bowling');
                 setTimeout(() => document.getElementById('fast-06').scrollIntoView({ behavior: 'smooth' }), 200);
 
-
-                 } else if (query.includes('slow') || query.includes('slow')) {
+            } else if (query.includes('slow ball')) {
                 switchTab('bowling');
                 setTimeout(() => document.getElementById('fast-07').scrollIntoView({ behavior: 'smooth' }), 200);
 
-                  } else if (query.includes('reverse') || query.includes('swing')) {
+            } else if (query.includes('reverse swing')) {
                 switchTab('bowling');
                 setTimeout(() => document.getElementById('fast-08').scrollIntoView({ behavior: 'smooth' }), 200);
 
-                 } else if (query.includes('off') || query.includes('cutter')) {
+            } else if (query.includes('off cutter')) {
                 switchTab('bowling');
                 setTimeout(() => document.getElementById('fast-09').scrollIntoView({ behavior: 'smooth' }), 200);
 
-
-                 } else if (query.includes('leg') || query.includes('cutter')) {
+            } else if (query.includes('leg cutter')) {
                 switchTab('bowling');
                 setTimeout(() => document.getElementById('fast-10').scrollIntoView({ behavior: 'smooth' }), 200);
 
-                } else if (query.includes('knuckle') || query.includes('knuckle')) {
+            } else if (query.includes('knuckle')) {
                 switchTab('bowling');
                 setTimeout(() => document.getElementById('fast-11').scrollIntoView({ behavior: 'smooth' }), 200);
 
-                 } else if (query.includes('beamer') || query.includes('beamer')) {
+            } else if (query.includes('beamer')) {
                 switchTab('bowling');
                 setTimeout(() => document.getElementById('fast-12').scrollIntoView({ behavior: 'smooth' }), 200);
 
-
-
-
-
-                 } else if (query.includes('deep field') || query.includes('deep')) {
+            // 4. Fielding කොටස
+            } else if (query.includes('deep field')) {
                 switchTab('fielding');
                 setTimeout(() => document.getElementById('catch-01').scrollIntoView({ behavior: 'smooth' }), 200);
+
             } else if (query.includes('running')) {
-                switchTab ('fielding');
+                switchTab('fielding');
                 setTimeout(() => document.getElementById('catch-02').scrollIntoView({ behavior: 'smooth' }), 200);
+
             } else if (query.includes('diving')) {
                 switchTab('fielding');
                 setTimeout(() => document.getElementById('catch-03').scrollIntoView({ behavior: 'smooth' }), 200);
-            } else if (query.includes('low')) {
+
+            } else if (query.includes('low catch')) {
                 switchTab('fielding');
                 setTimeout(() => document.getElementById('catch-04').scrollIntoView({ behavior: 'smooth' }), 200);
-            } else if (query.includes('high')) {
+
+            } else if (query.includes('high catch')) {
                 switchTab('fielding');
-                setTimeout (() => document.getElementById('catch-05').scrollIntoView({ behavior: 'smooth' }), 200);
+                setTimeout(() => document.getElementById('catch-05').scrollIntoView({ behavior: 'smooth' }), 200);
+
             } else if (
-                query.includes('fielding') || 
-                query.includes('area') || 
-                query.includes('slip') || 
-                query.includes('point') || 
-                query.includes('cover') || 
-                query.includes('gully') || 
-                query.includes('keeper') || 
-                query.includes('wicket-keeper') || 
-                query.includes('mid-wicket') || 
-                query.includes('third man') || 
-                query.includes('square leg') || 
-                query.includes('mid-off') || 
-                query.includes('mid-on')
+                query.includes('fielding') || query.includes('area') || query.includes('slip') || 
+                query.includes('point') || query.includes('cover') || query.includes('gully') || 
+                query.includes('keeper') || query.includes('mid-wicket') || query.includes('third man') || 
+                query.includes('square leg') || query.includes('mid-off') || query.includes('mid-on')
             ) {
                 switchTab('fielding');
                 setTimeout(() => document.getElementById('catch-06').scrollIntoView({ behavior: 'smooth' }), 200);
-             
 
-         } else {
+            } else {
                 alert("අදාළ අන්තර්ගතය හමු නොවීය.");
             }
         }
